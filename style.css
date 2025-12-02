@@ -11,10 +11,11 @@
 
 /* Root variables for easy theming */
 :root {
-  --primary-color: rgb(53, 66, 66);
-  --secondary-color: rgb(139 ,155, 147);
-  --title-color: rgb(228, 224, 218);
-  --font-color: rgb(7, 4, 4);
+  --primary-color: #0D0D0F;
+  --secondary-color: #CAA07D;
+  --title-color: ;
+  --font-color: #121312;
+  --secondary-font-color: #F7ECE6;
   --font-main: 'Roboto', sans-serif;
 }
 
@@ -32,52 +33,59 @@ body ul {
 
 /* Header styles */
 header {
-  background: var(--primary-color);
-  color: var(--title-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   padding: 2rem 0;
   text-align: center;
+  background: var(--primary-color);
+  color: var(--secondary-color);
 }
 
-header img {
-  border-radius: 50%;
-  border: 10px var(--secondary-color) solid;
-}
+  /* Profile picture and title */
 
-/* Navigation styles */
-nav {
-  margin-top: 1rem;
-}
+  .banner_picture {
+    padding-left: 100px;
+  }
 
-.contact_bar {
+  header img {
+    border-radius: 50%;
+    border: 10px var(--secondary-color) solid;
+  }
+
+  /*Navigation style*/
+
+  .contact_bar {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-top: 2rem;
-    margin-top: 2rem;
-    border-top: 2px solid var(--secondary-color);
-}
+    align-items: flex-start;
+    padding-left: 10rem;
+    height: 100%;
+    border-left: 2px solid var(--secondary-color);
+  }
+
+    ul li {
+    color: var(--secondary-font-color);
+    margin: 1rem;
+    transition: color 0.2s;
+  }
+
+  .contact_bar a {
+    color: var(--secondary-font-color);
+    text-decoration: none;
+    transition: all 200ms linear;
+  }
+
+  .contact_bar a:hover {
+    color: var(--secondary-color);
+  }
 
 /* Main content */
 main {
   max-width: 900px;
   margin: 2rem auto;
   padding: 1rem;
-}
-
-ul a {
-    text-decoration: none;
-    margin: 1rem;
-    transition: color 0.2s;
-}
-
-.contact_bar a {
-  color: var(--title-color);
-  transition: all 200ms linear;
-}
-
-.contact_bar a:hover {
-  color: var(--secondary-color);
 }
 
 /* Section styles */
@@ -131,37 +139,37 @@ section h2 {
   padding: 1rem;
 }
 
-  .skill_box {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 350px;
-    
-    border: 2px var(--primary-color) solid;
-    border-radius: 25px;
-  }
+.skill_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
 
-    .skill_box img {
-      width: 150px;
-    }
+  border: 2px var(--primary-color) solid;
+  border-radius: 25px;
+}
 
-    .skill_box p {
-      padding: 1rem;
-      border-radius: 20px;
-      color: white;
-      background-color: var(--primary-color);
-    }
+.skill_box img {
+  width: 150px;
+}
 
-    .skill_box a {
-      text-decoration: none;
-      color: var(--title-color);
-      transition: all linear 100ms;
-    }
+.skill_box p {
+  padding: 1rem;
+  border-radius: 20px;
+  color: white;
+  background-color: var(--primary-color);
+}
 
-    .skill_box a:hover {
-      color: var(--secondary-color);
-    }
+.skill_box a {
+  text-decoration: none;
+  color: var(--title-color);
+  transition: all linear 100ms;
+}
+
+.skill_box a:hover {
+  color: var(--secondary-color);
+}
 
 /* Footer styles */
 footer {
@@ -174,21 +182,19 @@ footer {
   width: 100%;
 }
 
-/* Utility classes */
-.text-center {
-  text-align: center;
-}
-
-.mt-2 {
-  margin-top: 2rem;
-}
-
-.mb-2 {
-  margin-bottom: 2rem;
-}
-
 /* Responsive design */
 @media (max-width: 600px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner_picture {
+    padding-left: 0;
+  }
+
   main {
     padding: 0.5rem;
   }
@@ -196,9 +202,11 @@ footer {
   .contact_bar {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin: 1rem 2rem;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    border-left: none;
+    width: 100%;
   }
 
   nav a {
@@ -217,3 +225,11 @@ footer {
     align-items: center;
     gap: 1px;
   }
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+}
