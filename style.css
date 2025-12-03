@@ -11,9 +11,9 @@
 
 /* Root variables for easy theming */
 :root {
-  --primary-color: #0D0D0F;
-  --secondary-color: #CAA07D;
-  --title-color: ;
+  --primary-color: #20262D;
+  --secondary-color: #A6A28B;
+  --title-color: #957652;
   --font-color: #121312;
   --secondary-font-color: #F7ECE6;
   --font-main: 'Roboto', sans-serif;
@@ -163,12 +163,12 @@ section h2 {
 
 .skill_box a {
   text-decoration: none;
-  color: var(--title-color);
+  color: var(--secondary-color);
   transition: all linear 100ms;
 }
 
 .skill_box a:hover {
-  color: var(--secondary-color);
+  color: var(--title-color);
 }
 
 /* Footer styles */
