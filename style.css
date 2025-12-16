@@ -171,6 +171,34 @@ section h2 {
   color: var(--title-color);
 }
 
+/* Projects style */
+
+.project_box ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items:flex-start;
+  width: 500px;
+  padding: 20px 40px;
+  margin: 20px 10px;
+  border: 2px solid var(--primary-color);
+  border-radius: 25px;
+  text-align: start;
+}
+
+.project_box li {
+  color: var(--font-color);
+}
+
+.project_box a {
+  color: var(--font-color);
+  text-decoration: none;
+  transition: all linear 150ms;
+}
+  .project_box a:hover {
+    color: var(--secondary-font-color);
+  }
+
 /* Footer styles */
 footer {
   background: var(--primary-color);
