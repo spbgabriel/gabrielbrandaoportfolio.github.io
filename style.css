@@ -131,7 +131,8 @@ section h2 {
 
 /* Skill icons */
 
-.skills {
+.skills,
+.projects {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
