@@ -173,12 +173,21 @@ section h2 {
 
 /* Projects style */
 
+.projects {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content:flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
 .project_box {
   display: flex;
   flex-direction: column;
   align-items:center;
   gap: 5px;
-  width: 300px;
+  width: 600px;
   padding: 0 20px;
   margin: 20px 10px;
   border: 2px solid var(--primary-color);
@@ -186,7 +195,7 @@ section h2 {
   text-align: start;
 }
   .project_box h3 {
-    width: 300px;
+    width: 600px;
     padding: 1rem;
     border-radius: 20px 20px 0 0;
     color: white;
