@@ -121,13 +121,18 @@ section h2 {
   border-radius: 15px;
   color: var(--font-color);
   text-decoration: none;
-  transition: all 150ms linear;
 }
-
-.button_link:hover {
-  transform: translateZ(5px);
-  box-shadow: 2px 2px 5px var(--font-color);
-}
+  .button_link:hover {
+    transform: translateZ(5px);
+    box-shadow: 2px 2px 5px var(--font-color);
+    transition: all 150ms ease-in;
+  }
+  .button_link:active {
+    background-color: var(--secondary-font-color);
+    transform: translateY(5px);
+    box-shadow: none;
+    transition: all 150ms ease-in-out;
+  }
 
 /* Skill icons */
 
@@ -151,7 +156,8 @@ section h2 {
 }
 
 .skill_box img {
-  width: 150px;
+  width: 20%;
+  margin: 10px;
 }
 
 .skill_box p {
@@ -161,15 +167,21 @@ section h2 {
   background-color: var(--primary-color);
 }
 
-.skill_box a {
+.certificate-link {
+  padding: 5px;
   text-decoration: none;
+  border-radius: 15px;
+  background-color: var(--primary-color);
   color: var(--secondary-color);
-  transition: all linear 100ms;
 }
-
-.skill_box a:hover {
-  color: var(--title-color);
-}
+  .certificate-link:hover {
+    color: var(--title-color);
+    transition: all linear 100ms;
+  }
+  .certificate-link:active {
+    background-color: var(--secondary-font-color);
+    transition: all easy-in 150ms;
+  }
 
 /* Projects style */
 
