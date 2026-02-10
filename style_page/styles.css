@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    /*color scheme*/
+    --primary-color: #20262D;
+    --secondary-color: #A6A28B;
+    --title-color: #957652;
+    --font-color: #121312;
+    --secondary-font-color: #F7ECE6;
+    /*font family scheme*/
+    --font-main: 'Roboto Serif', serif;
+    --font-title: 'Black Ops One', serif;
+    --font-buttons: 'Tomorrow', serif;
+    --text-font: 'Roboto', sans;
+}
+
+html {
+    max-width: 1440px;
+    margin: 10px;
+    font-family: var(--font-main);
+    color: var(--font-color);
+}
+
+/*BODY STYLE*/
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+body h1 {
+    align-items: flex-start;
+    font-family: var(--font-title);
+    font-weight: lighter;
+}
+
+.box_page {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.content_box {
+    display: flex;
+    flex-direction: column;
+}
+
+.section_box {
+    width: 100%;
+    padding: 20px;
+    border: 2px solid var(--secondary-color);
+}
+    .section_box h2 {
+        font-family: var(--font-buttons);
+    }
+.display_box {
+    display: grid;
+    grid-template-columns: repeat(2, 25%);
+    grid-template-rows: repeat(3, 30%);
+    justify-content: space-evenly;
+    gap: 15px;
+}
+    .color_box {
+        width: fit-content;
+        padding: 5px;
+        border: 2px solid;
+        text-align: center;
+    }
+        #primary_color {
+            background-color: var(--primary-color);
+            color: var(--secondary-font-color);
+        }
+        #secondary_color {
+            background-color: var(--secondary-color);
+        }
+        #title_color {
+            background-color: var(--title-color);
+        }
+        #font_color {
+            background-color: var(--font-color);
+            color: var(--secondary-font-color);
+        }
+        #secondary_font_color {
+            background-color: var(--secondary-font-color);
+        }
+    #font-box {
+        width: 300px;
+    }
+    #mainfont_text {
+        font-family: var(--text-font);
+    }
