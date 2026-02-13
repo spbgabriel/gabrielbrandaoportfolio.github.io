@@ -4,11 +4,11 @@
 
 :root {
     /*color scheme*/
-    --primary-color: #20262D;
-    --secondary-color: #A6A28B;
-    --title-color: #957652;
-    --font-color: #121312;
-    --secondary-font-color: #F7ECE6;
+    --primary-color: hsl(212, 17%, 15%);
+    --secondary-color: hsl(51, 13%, 60%);
+    --title-color: hsl(32, 29%, 45%);
+    --font-color: hsl(120, 3%, 7%);
+    --secondary-font-color: hsl(21, 52%, 94%);
     /*font family scheme*/
     --font-main: 'Roboto Serif', serif;
     --font-title: 'Black Ops One', serif;
